@@ -2,6 +2,9 @@
 This allows you to setup autosplitting for Celeste Classic in Linux/Mac/Windows using LiveSplit/LiveSplitOne.
 
 ## Using LiveSplit
+
+If you're on Windows and have PICO-8 (0.2.3+), you can download celeste_autosplit_asl.p8 and use the built in autosplitter in Livesplit. Enable it in the Splits menu.
+
 You'll need to install the LiveSplit Server component, see steps here: https://github.com/LiveSplit/LiveSplit.Server#install
 
 - Open LiveSplit and edit your layout, click on the + button and go to Control -> LiveSplit Server.
@@ -13,6 +16,7 @@ You'll need to install the LiveSplit Server component, see steps here: https://g
 - Run the autosplitter python script and input "y" to say you're using LiveSplitOne
 - Open https://one.livesplit.org/ in your browser, click the Connect to Server button and type `ws://localhost:5000`
 -  After Pico-8 opens, run the autosplitter cart (or do nothing if you're using the standalones)
+
 
 ### Accuracy/Is this thing even working correctly
 The python script prints all splits to the console, you can compare those times with the times the autosplitter gives (remember to check Game Time, NOT Real Time!)
