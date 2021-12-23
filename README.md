@@ -4,12 +4,12 @@ This allows you to setup autosplitting for Celeste Classic in Linux/Mac/Windows 
 ## Using LiveSplit
 
 
-# Windows
+### Windows
 Windows users can simply download either the pico-8 cart or the standalone from the `autosplitter-windows` folder, and then use the built in autosplitter function in Livesplit. (Edit splits > Enable)
 
 You can modify the cartridge and it will still work, however if exporting back to standalone make sure you export it with the name `celeste_asl`. Any other name will not work.
 
-# Using another OS
+### Using another OS
 You'll need to install the LiveSplit Server component, see steps here: https://github.com/LiveSplit/LiveSplit.Server#install
 
 - Open LiveSplit and edit your layout, click on the + button and go to Control -> LiveSplit Server.
