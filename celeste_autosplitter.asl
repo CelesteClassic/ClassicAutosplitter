@@ -13,12 +13,17 @@ state("pico8","0.2.3"){
 
 state("pico8","0.2.4"){
     int level : 0x475188;
-    string8 time : 0x47518E; 
+    string8 time : 0x47518D; 
 }
 
 state("pico8","0.2.4b"){ 
     int level : 0x4761A8;
-    string8 time : 0x4761AE; 
+    string8 time : 0x4761AD; 
+}
+
+state("pico8","0.2.4c"){ 
+    int level : 0x479A20;
+    string8 time : 0x479A25; 
 }
 
 init{ 
@@ -29,6 +34,7 @@ init{
         case 5206016: version = "0.2.3"; break;
         case 5300224: version = "0.2.4"; break;
         case 5304320: version = "0.2.4b"; break;
+        case 5320704: version = "0.2.4c"; break;
         default: version = "Unknown!"; break;
     }
 }
