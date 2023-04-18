@@ -26,8 +26,19 @@ state("pico8","0.2.4c"){
     string8 time : 0x479A25; 
 }
 
+state("pico8","0.2.5c"){ 
+    int level : 0x48EB40;
+    string8 time : 0x48EB45; 
+}
+
+state("pico8","0.2.5g"){ 
+    int level : 0x468B84;
+    string8 time : 0x468B89;
+}
+
 init{ 
     refreshRate = 30;
+    //print((modules.First().ModuleMemorySize).ToString());
 
     // If pico8 is being used, check which version
     switch (modules.First().ModuleMemorySize) {
@@ -35,6 +46,8 @@ init{
         case 5300224: version = "0.2.4"; break;
         case 5304320: version = "0.2.4b"; break;
         case 5320704: version = "0.2.4c"; break;
+        case 5406720: version = "0.2.5c"; break;
+        case 5251072: version = "0.2.5g"; break; 
         default: version = "Unknown!"; break;
     }
 }
