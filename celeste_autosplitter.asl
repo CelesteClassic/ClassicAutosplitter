@@ -1,5 +1,11 @@
 // CELESTE Classic Autosplitter
 
+// Desktop app
+state("celeste_asl"){ 
+    int level : 0x4345BC;
+    string8 time : 0x4345C2; 
+}
+
 state("pico8"){}
 
 init{
